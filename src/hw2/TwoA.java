@@ -46,7 +46,7 @@ public class TwoA
     boolean oddCount = false;
     for (int l = 0; l < ints.length; l++)
       {
-        for (int m = 1; m < ints.length; m++)
+        for (int m = l+1; m < ints.length; m++)
           {
             if (isOdd (ints[l] * ints[m]))
               {
@@ -63,7 +63,7 @@ public class TwoA
     boolean distinct = true;
     for (int n = 0; n < vals.length; n++)
       {
-        for (int o = 1; o < vals.length; o++)
+        for (int o = n+1; o < vals.length; o++)
           {
             if (vals[n] == vals[o])
               {
@@ -74,7 +74,7 @@ public class TwoA
     return distinct;
   }// allDistinct
 
-  public static void
+  public static int[]
   reverseInts (int[] nums)
   {
   int temp;
@@ -86,5 +86,7 @@ public class TwoA
       nums[len] = temp;
       len--;
     }//for(p)
+    return nums;
   }//reverseInts
+  
 }// TwoA
