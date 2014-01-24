@@ -6,6 +6,10 @@ public class TwoA
     isMultiple (long a, long b)
   {
     boolean multInt = false;
+    if (b==0)
+      {
+        return multInt;
+      }
     long i = a / b;
     if ((int) i * b == a)
       {
@@ -18,8 +22,7 @@ public class TwoA
     isOdd (int i)
   {
     boolean odd = false;
-    int test = (int) Math.pow (-1, i);
-    if (test == -1)
+    if ((int) Math.pow (-1, i) == -1)
       {
         odd = true;
       }// if
