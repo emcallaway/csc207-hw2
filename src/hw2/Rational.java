@@ -44,10 +44,10 @@ public class Rational
    * Flip a rational number (denominator/numerator) (Mutator)
    */
   public void
-    inverse ()
+    invert ()
   {
-    //STUB
-  } // inverse
+    return; //STUB
+  } // invert
 
   /**
    * Return the greatest common divisor of two rational numbers 
@@ -74,6 +74,6 @@ public class Rational
    */
   public void simplify()
   {
-    //STUB
+    return; //STUB
   }//simplify
 }//Rational
