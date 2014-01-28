@@ -82,22 +82,25 @@ public class TestTwoA
     assertEquals ("{2, 9999, 9999, 6}", false, TwoA.allDistinct (array4));
     assertEquals ("{-24, 24, 90, 655}", true, TwoA.allDistinct (array5));
   }// test_allDistinct
-  
+
   @Test
   public void
     test_reverseInts ()
   {
     int[] array = { 2, 4, 6, 8 };
-    int[] array11 = { 8, 6, 4, 2};
+    int[] array11 = { 8, 6, 4, 2 };
     int[] array2 = { 2, 3, 6, 8, 5 };
     int[] array22 = { 5, 8, 6, 3, 2 };
-  //   int[] array3 = { 3, 7, 5, 9999 };
-  //  int[] array4 = { 2, 9999, 9999, 6 };
-  //  int[] array5 = { -24, 24, 90, 655 };
-    assertEquals ("{2, 4, 6, 8}", array11, TwoA.allDistinct (array));
-    assertEquals ("{2, 3, 6, 8, 5}", array22, TwoA.allDistinct (array2));
-  //  assertEquals ("{3, 7, 5, 9999}", true, TwoA.allDistinct (array3));
-  // assertEquals ("{2, 9999, 9999, 6}", false, TwoA.allDistinct (array4));
-  // assertEquals ("{-24, 24, 90, 655}", true, TwoA.allDistinct (array5));
+    int[] array3 = { 3, 7, 5, 9999 };
+    int[] array33 = { 9999, 5, 7, 3 };
+    int[] array4 = { 2, 9999, 9999, 6 };
+    int[] array44 = { 6, 9999, 9999, 2 };
+    int[] array5 = { -24, 24, 90, 655 };
+    int[] array55 = { 655, 90, 24, -24 };
+    assertArrayEquals ("{2, 4, 6, 8}", array11, TwoA.reverseInts (array));
+    assertArrayEquals ("{2, 3, 6, 8, 5}", array22, TwoA.reverseInts (array2));
+    assertArrayEquals ("{3, 7, 5, 9999}", array33, TwoA.reverseInts (array3));
+    assertArrayEquals ("{2, 9999, 9999, 6}", array44, TwoA.reverseInts (array4));
+    assertArrayEquals ("{-24, 24, 90, 655}", array55, TwoA.reverseInts (array5));
   }// test_reverseInts
 }// TestTwoA

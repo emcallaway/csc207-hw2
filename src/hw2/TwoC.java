@@ -1,5 +1,6 @@
 package hw2;
 
+
 public class TwoC {
 	/**
 	 * Get the numerator of this rational number. (Observer)
