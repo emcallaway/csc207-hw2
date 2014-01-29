@@ -1,14 +1,9 @@
 package hw2;
 
-public class TwoC
+public class Rational
 {
   
-  public Rational(int num, int den)
-  {
-    
-  }
-  
-  /**
+  /**   
    * Get the numerator of this rational number. (Observer)
    */
   public int
@@ -49,13 +44,13 @@ public class TwoC
    * Flip a rational number (denominator/numerator) (Mutator)
    */
   public void
-    inverse ()
+    invert ()
   {
-    //STUB
-  } // inverse
+    return; //STUB
+  } // invert
 
   /**
-   * Return the greatest common devisor of two rational numbers 
+   * Return the greatest common divisor of two rational numbers 
    * (Observer)
    */
   public int
@@ -73,4 +68,12 @@ public class TwoC
   {
     return 0; // STUB
   }// lcd
-}
+  
+  /**
+   * Simplify a rational number (if possible) (Mutator)
+   */
+  public void simplify()
+  {
+    return; //STUB
+  }//simplify
+}//Rational
