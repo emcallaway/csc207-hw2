@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class TestTwoA
 {
-
   @Test
   public void
     test_isMultiple ()
@@ -99,6 +98,5 @@ public class TestTwoA
         assertArrayEquals (array2, TwoA.reverseInts (array1));
       }//for i
   }// test_reverseInts
-  
   
 }// TestTwoA

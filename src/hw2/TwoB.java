@@ -11,6 +11,7 @@ public class TwoB
   {
     return (int) ((left/2.0) + (right/2.0));
   } // average(int,int)
+  
 }// class TwoB
 
 
@@ -22,6 +23,4 @@ input numbers, because the original equation did not allow
 for (left + right) to be greater or equal to the MAX_VALUE 
 or less than or equal to the MIN_VALUE, even if the input 
 numbers were themselves within the accepted range.  
-
-
 */

@@ -9,7 +9,7 @@ public class TwoA
     if (b==0)
       {
         return multInt;
-      }
+      } // if (b)
     long i = a / b;
     if ((int) i * b == a)
       {
